@@ -1,7 +1,32 @@
 # assignment
 cigna
 1. big4health-admin
-2. big4health-backend
+
+   **Running in local:**
+   1. Setup SSH keys to clone the repo
+   2. verify node version and install ng
+      node -v
+      npm install -g @angular/cli
+      ng --version
+   3. Check for dependencies and update package.json respectively
+   4. npm install
+   5. ng serve
+   6. launch localhost:4200 to access the GUI
+
+   **Running in Docker:"
+   1. create a Dockerfile
+   2. build the Docker image and push to dockerhub for accessibility with portainer or k8s
+        docker build -t big4health-admin:1.0.0 .
+        docker tag <image id> username/ big4health-admin:1.0.0
+        docker push username/ big4health-admin:1.0.0
+        Running locally 
+        docker run -d -p 4200:4200 --network=host -e NODE_OPTIONS=--openssl-legacy-provider big4health-admin:1.0.0
+   3. verify by running docker ps and docker logs command. 
+   4. Access GUI by visiting localhost:4200
+         <img width="1446" height="828" alt="image" src="https://github.com/user-attachments/assets/bd238f2d-6e5c-49dd-b5a6-9d572e1d4753" />
+
+
+3. big4health-backend
 
    **Running in local :**
    1. Setup SSH keys to clone the repo

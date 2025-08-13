@@ -66,7 +66,6 @@ cigna
    8.	Validate the swagger url 
         <img width="940" height="238" alt="image" src="https://github.com/user-attachments/assets/d1a06e34-2d41-4796-b97a-7bc347c0e4e4" />
 
-     <img width="940" height="464" alt="image" src="https://github.com/user-attachments/assets/2771e288-d17a-4d6d-9cf2-6219f8e44c84" />
 
 3. **big4health-frontend**
   
@@ -98,6 +97,9 @@ cigna
         docker ps and docker logs to check the logs
 
        <img width="1698" height="372" alt="image" src="https://github.com/user-attachments/assets/9c39f922-ac8b-4ce7-ab72-d28324a563a8" />
+
+   <img width="1618" height="873" alt="image" src="https://github.com/user-attachments/assets/d13c287a-6cae-4ff1-bb39-cfe36833a198" />
+
 
  
 

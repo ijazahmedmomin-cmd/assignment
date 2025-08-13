@@ -2,6 +2,7 @@
 cigna
 1. big4health-admin
 2. big4health-backend
+
    **Running in local :**
    1. Setup SSH keys to clone the repo
    2. Create a mongo DB cluster and generate the URL to be used by node.js app

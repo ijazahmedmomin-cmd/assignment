@@ -81,22 +81,22 @@ cigna
     Running in Docker:
      1.  Create Dockerfile
      2.  Build the image
-        
-        docker build -t big4health-frontend:1.0.0 .
-   
-        tag the image and push to dockerhub
-   
-        docker tag <image id> username/big4health-frontend:1.0.0
-   
-        docker push username/big4health-frontend:1.0.0
-   
-        run container
-   
-        docker run -d -p 3000:3000 –network=host -e NODE_OPTIONS=--openssl-legacy-provider  big4health-frontend:1.0.0
 
-        docker ps and docker logs to check the logs
+         docker build -t big4health-frontend:1.0.0 .
+         
+         tag the image and push to dockerhub
+         
+         docker tag <image id> username/big4health-frontend:1.0.0
+         
+         docker push username/big4health-frontend:1.0.0
 
-       <img width="1698" height="372" alt="image" src="https://github.com/user-attachments/assets/9c39f922-ac8b-4ce7-ab72-d28324a563a8" />
+         run container
+
+         docker run -d -p 3000:3000 –network=host -e NODE_OPTIONS=--openssl-legacy-provider  big4health-frontend:1.0.0
+
+         docker ps and docker logs to check the logs
+
+         <img width="1698" height="372" alt="image" src="https://github.com/user-attachments/assets/9c39f922-ac8b-4ce7-ab72-d28324a563a8" />
 
    <img width="1618" height="873" alt="image" src="https://github.com/user-attachments/assets/d13c287a-6cae-4ff1-bb39-cfe36833a198" />
 

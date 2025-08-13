@@ -100,6 +100,29 @@ cigna
 
    <img width="1618" height="873" alt="image" src="https://github.com/user-attachments/assets/d13c287a-6cae-4ff1-bb39-cfe36833a198" />
 
+4. **big4health-nativeapp**
+   Running locally
+   clone the repo to local
+   
+   npm install to check install all dependencies and resolve
+   npm start
+
+   Running in Docker:
+
+   1. create a dockerfile
+   2. build image
+   
+   docker build -t big4health-nativeapp:1.0.0 .
+   
+   docker tag 193be2398751 ix0040557/big4health-nativeapp:1.0.0
+   
+   docker push ix0040557/big4health-nativeapp:1.0.0
+   
+   docker run -d  -e NODE_OPTIONS=--openssl-legacy-provider --network=host big4health-nativeapp:1.0.0
+
+   docker ps and docker logs to verify logs
+
+   <img width="1873" height="943" alt="image" src="https://github.com/user-attachments/assets/fbf89195-b607-4f82-991b-93021cac5157" />
 
  4. big4health-nativeapp
     

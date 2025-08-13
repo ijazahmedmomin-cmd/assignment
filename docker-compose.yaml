@@ -44,9 +44,10 @@ services:
         condition: on-failure
   big4health-nativeapp:
     image: ix0040557/big4health-nativeapp:1.0.0
+    environment:
+      NODE_OPTIONS: --openssl-legacy-provider
     networks:
      - big4health
-     - big4health-1
     deploy:
       placement:
         constraints:
@@ -56,4 +57,6 @@ services:
         condition: on-failure
 networks:
   big4health:
+    external: true
+  big4health-1:
     external: true

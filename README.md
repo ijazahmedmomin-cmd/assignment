@@ -52,16 +52,16 @@ cigna
    1.	Create a dockerfile
    2.	Build the image locally – later this can be pushed to dockerhub
       
-      docker build -t big4health-backend:1.0.0 .
+        docker build -t big4health-backend:1.0.0 .
    4.	Run the container
       
-      docker run -d  -p 3000:3000 big4health-backend:1.0.0
+        docker run -d  -p 3000:3000 big4health-backend:1.0.0
    
    6.	Verify the container status and logs
       
-      docker ps
+        docker ps
      	
-      docker logs -f 43ffbdf3116b
+        docker logs -f 43ffbdf3116b
    
    8.	Validate the swagger url 
         <img width="940" height="238" alt="image" src="https://github.com/user-attachments/assets/d1a06e34-2d41-4796-b97a-7bc347c0e4e4" />

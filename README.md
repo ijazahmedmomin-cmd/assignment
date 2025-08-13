@@ -13,7 +13,7 @@ cigna
    5. ng serve
    6. launch localhost:4200 to access the GUI
 
-   **Running in Docker:"
+   **Running in Docker:**
    1. create a Dockerfile
    2. build the Docker image and push to dockerhub for accessibility with portainer or k8s
         docker build -t big4health-admin:1.0.0 .

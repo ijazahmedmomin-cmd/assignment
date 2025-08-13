@@ -1,0 +1,53 @@
+version: '3.3'
+services:
+  big4health-admin:
+    image: ix0040557/big4health-admin:1.0.0
+    environment:
+      PORT: '4200'
+    networks:
+     - big4health
+    deploy:
+      placement:
+        constraints:
+         - node.hostname == <node1>
+      restart_policy:
+        condition: on-failure
+  big4health-backend:
+    image: ix0040557/big4health-backend:1.0.0
+    environment:
+      PORT: '3000'
+      MONGO_CONNECTION_STRING: 'mongodb+srv://******:*******@****.*****.mongodb.net/?retryWrites=true&w=majority&appName=****'
+    networks:
+     - big4health
+    deploy:
+      placement:
+        constraints:
+         - node.hostname == <node1>
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+  big4health-frontend:
+    image: ix0040557/big4health-frontend:1.0.0
+    networks:
+     - big4health
+    deploy:
+      placement:
+        constraints:
+         - node.hostname == <node1>
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+  big4health-nativeapp:
+    image: ix0040557/big4health-nativeapp:1.0.0
+    networks:
+     - big4health
+    deploy:
+      placement:
+        constraints:
+         - node.hostname == <node1>
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+networks:
+  big4health:
+    external: true
